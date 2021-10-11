@@ -31,10 +31,10 @@ move_array.append(MoveOfMainAssets("22.11.2016", 300, 40, 40, 60))
 
 def printMoveOfMainAssets(moveOfMainAssets):
     '''printMoveOfMainAssets function prints
-    "Рух основних засобів"
+    "Статистичні дані про ринкові ціни"
     with names and values'''
 
-    print("Дата: {data}, Код ринку: {code}, Ціна картоплі,грн.: {potato}, Ціна капусти,грн.: {cabbage} Ціна цибулі, грн: {onion}"
+    print("Дата: {data}, Код ринку: {code}, Картопля,грн.: {potato}, Капуста,грн.: {cabbage} Цибуля, грн: {onion}"
           .format(data=moveOfMainAssets.data, code=moveOfMainAssets.code, potato=moveOfMainAssets.potato,
                   cabbage=moveOfMainAssets.cabbage, onion=moveOfMainAssets.onion)) 
 for data in move_array:
@@ -42,10 +42,10 @@ for data in move_array:
 
 def printTypeOfMainAssets(typeOfMainAssets):
     '''printTypeOfMainAssets function prints
-    "Вид основних засобів"
+    "Довідник ринків"
     with names and values'''
 
-    print("Код ринку: {code}, Найменування ринку: {type}"
+    print("Код: {code}, Найменування: {type}"
         .format(code=typeOfMainAssets.code, type=typeOfMainAssets.type))
 
 for data in type_array:
